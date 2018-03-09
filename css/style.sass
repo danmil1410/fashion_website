@@ -1,0 +1,131 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain)
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,
+nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+/* Website CSS
+
+@import url('https://fonts.googleapis.com/css?family=Lato:900')
+
+$accent: #3F1133
+$light: #E3E1E6
+
+.hero
+  display: grid
+  grid-template-columns: 1fr 1fr
+  height: 100vh
+  width: 100vw
+  background: url("../img/hero.jpg")
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+.logotype
+  position: relative
+  grid-column: 2/3
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100vh
+  color: $accent
+  transition: 500ms ease-in-out
+
+  .svg-inline--fa
+    margin-bottom: 15px
+
+h1
+  font-family: 'Cambria', sans-serif
+  font-weight: bold
+  font-size: 50px
+  letter-spacing: 0.05em
+  text-transform: uppercase
+
+.navigation
+  position: fixed
+  top: 0
+  right: -205px
+  bottom: 0
+  width: 220px
+  background: $accent
+  transition: 500ms ease-in-out
+  z-index: 99
+
+  &:hover
+    right: 0
+
+  &:hover + .logotype
+    padding-right: 220px
+
+ul
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100vh
+
+li
+  height: 75px
+  width: 180px
+
+  a
+    display: flex
+    align-items: center
+    height: 75px
+    width: 180px
+    text-align: center
+    text-decoration: none
+    color: transparentize($light, 0.25)
+    transition: 300ms ease-in-out
+
+    &:hover
+      color: $light
+
+    .svg-inline--fa
+      width: 75px !important
+
+    p
+      font-family: 'Lato', sans-serif
+      font-size: 16px
